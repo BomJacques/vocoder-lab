@@ -3,9 +3,9 @@ VOCODER LAB effect and instrument VST3 builds for Windows x64.
 
 ## Download
 
-**[Download VOCODER LAB 0.5.2 — effect and instrument VST3 ZIP](https://github.com/BomJacques/vocoder-lab/raw/refs/heads/main/downloads/VOCODER-LAB-0.5.2-VST3-win64.zip)**
+**[Download VOCODER LAB 0.6.0 — effect and instrument VST3 ZIP](https://github.com/BomJacques/vocoder-lab/raw/refs/heads/main/downloads/VOCODER-LAB-0.6.0-VST3-win64.zip)**
 
-The ZIP is visible in [`downloads`](downloads) and on the [0.5.2 release page](https://github.com/BomJacques/vocoder-lab/releases/tag/v0.5.2), with its SHA-256 checksum. Previous downloads and releases, including 0.5.1, remain available.
+The ZIP and SHA-256 checksum are visible in [`downloads`](downloads) and on the [0.6.0 release page](https://github.com/BomJacques/vocoder-lab/releases/tag/v0.6.0). All previous downloads and releases remain available.
 
 ## Install
 
@@ -15,12 +15,16 @@ The ZIP is visible in [`downloads`](downloads) and on the [0.5.2 release page](h
 
 Windows x64, VST3 only. No standalone app. Requires the Microsoft Visual C++ x64 runtime. Keep each entire `.vst3` folder together.
 
+## Phrase performance in 0.6
+
+Choose **PHRASE / TI welcome** and play MIDI notes **48, 50, 52 and 53**. In **Phonic Keys → Phrase keys**, select a piano note, type words and press **Build & assign**. Edit each phoneme, duration and pitch offset; use One-shot, Hold or Loop, with optional host-tempo sync. One phrase plays at a time, with the latest mapped note taking over. Existing unmapped sound keys retain their polyphony. The phrase bank, steps and text drafts save with projects and presets; restoring never autoplays. There are four phrase presets and **42 presets total**.
+
+Rounded phonetic tiles remain the default mapping view. Click a tile to replace the selected note's phrase with a single sound. The earlier note-run click fix is retained; user feedback confirms the clicks have stopped. The new phrase workflow still needs user testing in Reason.
+
 ## Build contents
 
-Ten speech choices: Formant, TI keyboard/chip pitch, SP0256, SC-01A, MEA8000, FOF, Digitalker, FS-inspired 8+8 and Klatt. LPC-10 is a separate mono output codec with approximately 166 ms intentional delay. SID/Amstrad AY carriers, offline typed speech, singing controls, grouped phonetic assignments and 38 presets are included. FS and Klatt have dedicated Engine character panels.
+Ten speech choices: Formant, TI keyboard/chip pitch, SP0256, SC-01A, MEA8000, FOF, Digitalker, FS-inspired 8+8 and Klatt. LPC-10 is a separate mono output codec with approximately 166 ms intentional delay. SID/Amstrad AY carriers, offline typed speech, singing controls, immediate phonetic assignments and MIDI capture/export are included. FS and Klatt have dedicated Engine character panels.
 
-Version 0.5.2 restores the grouped rounded sound tiles whenever you enter Phonic Keys, including after using another tab's detail or engine controls. Select a note on the mapping piano, then click a tile to assign its sound. Edit sound / Sound tiles switches the programmer view; clicking Phonic Keys again also restores the tiles.
+Debug and Release each pass **14/14** automated suites, including phrase timing/retriggers, sustain/channel ownership, state recall, UI assignment and callback allocation guards. Both packaged VST3s pass extracted load/process and checksum checks. Instructions, scope and attribution are included in the ZIP.
 
-The 0.5.1 note-run click fix remains included: connected-note timing is preserved and active retriggers use a short 3 ms output transition. Fast TI staccato retains core continuity. The earlier FS sine-table assertion fix and stable legacy automation mapping remain included. Debug and Release each pass 13/13 automated tests; the packaged effect and instrument pass extracted VST3 loading/processing and checksum checks. Usage, tested scope and attribution are included in the ZIP.
-
-Development build: actual Reason sessions and subjective voice fidelity remain unverified. Speech data is authored. FS-inspired is an architectural interpretation, not an FS1R firmware/patch/FSeq emulator; Klatt is a reference-backed synthesis port, not DECtalk/Perfect Paul. Complete original hardware or a percentage of sound equivalence is not claimed.
+Speech data is authored. FS-inspired is an architectural interpretation, not an FS1R firmware/patch/FSeq emulator; Klatt is a reference-backed synthesis port, not DECtalk/Perfect Paul. Full original-hardware or percentage-fidelity equivalence is not claimed. Broader full-DAW and subjective voice-fidelity validation remain unverified.
