@@ -3,9 +3,9 @@ VOCODER LAB effect and instrument VST3 builds for Windows x64.
 
 ## Download
 
-**[Download VOCODER LAB 0.6.0 — effect and instrument VST3 ZIP](https://github.com/BomJacques/vocoder-lab/raw/refs/heads/main/downloads/VOCODER-LAB-0.6.0-VST3-win64.zip)**
+**[Download VOCODER LAB 0.6.1 — effect and instrument VST3 ZIP](https://github.com/BomJacques/vocoder-lab/raw/refs/heads/main/downloads/VOCODER-LAB-0.6.1-VST3-win64.zip)**
 
-The ZIP and SHA-256 checksum are visible in [`downloads`](downloads) and on the [0.6.0 release page](https://github.com/BomJacques/vocoder-lab/releases/tag/v0.6.0). All previous downloads and releases remain available.
+The ZIP and SHA-256 checksum are visible in [`downloads`](downloads) and on the [0.6.1 release page](https://github.com/BomJacques/vocoder-lab/releases/tag/v0.6.1). All previous downloads and releases remain available.
 
 ## Install
 
@@ -15,11 +15,15 @@ The ZIP and SHA-256 checksum are visible in [`downloads`](downloads) and on the 
 
 Windows x64, VST3 only. No standalone app. Requires the Microsoft Visual C++ x64 runtime. Keep each entire `.vst3` folder together.
 
-## Phrase performance in 0.6
+## Easier controls in 0.6.1
 
-Choose **PHRASE / TI welcome** and play MIDI notes **48, 50, 52 and 53**. In **Phonic Keys → Phrase keys**, select a piano note, type words and press **Build & assign**. Edit each phoneme, duration and pitch offset; use One-shot, Hold or Loop, with optional host-tempo sync. One phrase plays at a time, with the latest mapped note taking over. Existing unmapped sound keys retain their polyphony. The phrase bank, steps and text drafts save with projects and presets; restoring never autoplays. There are four phrase presets and **42 presets total**.
+The GUI now starts in **Easy**. Use the header switch for **Advanced** routing and detailed editing. **Phonic Keys** has persistent **Sound tiles / Words to keys** navigation. Select a key on the upper piano, then click a tile or type words and press **Assign words**. The lower piano plays the saved assignments.
 
-Rounded phonetic tiles remain the default mapping view. Click a tile to replace the selected note's phrase with a single sound. The earlier note-run click fix is retained; user feedback confirms the clicks have stopped. The new phrase workflow still needs user testing in Reason.
+**Speech Synth → Vowel touch pad** opens the large draggable vowel surface in either view. Hold a note or enable Audition voice, drag to shape the sound, choose a target note and save the vowel. **Assign words to a key...** copies typed speech into the selected key's draft without replacing its saved sequence until you assign.
+
+Hover explanations cover controls and both pianos. **? Help** opens a built-in guide. Advanced reveals individual phrase sounds, timing and pitch. The GUI was reviewed by a dedicated subagent and its actual rendered screens inspected. New navigation/state/assignment regressions pass. The new workflow still needs user testing in Reason.
+
+All ten speech engines, 42 presets, phrase playback and the previous note-run click fix remain included. No DSP changes in this release.
 
 ## Build contents
 
